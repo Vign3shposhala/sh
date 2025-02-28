@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>📚 Student's Helper</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* General Styles */
@@ -12,35 +12,23 @@
             font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 0;
-            color: #fff;
+            color: #2d2d2d;
             line-height: 1.6;
-            overflow-x: hidden;
-            background: linear-gradient(-45deg, #ff6b6b, #ffcc00, #00d2ff, #12c2e9);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
-        }
-
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            background-color: #f8f9fa;
         }
 
         header {
-            background: rgba(0, 0, 0, 0.7);
+            background-color: #ffffff;
             padding: 20px;
             text-align: center;
-            border-bottom: 4px solid #ffcc00;
-            position: relative;
-            z-index: 1;
+            border-bottom: 1px solid #e0e0e0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
-            font-family: 'Space Mono', monospace;
             font-size: 2.5em;
             margin: 0;
-            color: #ffcc00;
-            animation: fadeInDown 1s ease-in-out;
+            color: #2d2d2d;
         }
 
         nav {
@@ -48,7 +36,7 @@
         }
 
         nav a {
-            color: #fff;
+            color: #2d2d2d;
             text-decoration: none;
             margin: 0 15px;
             font-weight: 600;
@@ -56,7 +44,7 @@
         }
 
         nav a:hover {
-            color: #ffcc00;
+            color: #007bff;
         }
 
         .container {
@@ -66,31 +54,28 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            position: relative;
-            z-index: 1;
         }
 
         .section {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin: 15px;
             padding: 20px;
             flex: 1 1 45%;
             min-width: 300px;
             transition: transform 0.3s, box-shadow 0.3s;
-            backdrop-filter: blur(10px);
         }
 
         .section:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
         .section h2 {
-            font-family: 'Space Mono', monospace;
-            color: #ffcc00;
-            border-bottom: 2px solid #ffcc00;
+            font-size: 1.5em;
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
@@ -102,65 +87,43 @@
 
         ul li {
             margin: 15px 0;
-            font-size: 1.1em;
+            font-size: 1em;
         }
 
         a {
             text-decoration: none;
-            color: #ffcc00;
+            color: #007bff;
             font-weight: bold;
             transition: color 0.3s;
         }
 
         a:hover {
-            color: #fff;
+            color: #0056b3;
         }
 
         footer {
             margin-top: 40px;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
+            background-color: #ffffff;
             text-align: center;
             font-weight: bold;
-            color: #fff;
-            position: relative;
-            z-index: 1;
+            color: #2d2d2d;
+            border-top: 1px solid #e0e0e0;
         }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .section {
-            opacity: 0;
-            animation: fadeIn 0.5s ease-in-out forwards;
-        }
-
-        .section:nth-child(1) { animation-delay: 0.2s; }
-        .section:nth-child(2) { animation-delay: 0.4s; }
-        .section:nth-child(3) { animation-delay: 0.6s; }
-        .section:nth-child(4) { animation-delay: 0.8s; }
 
         /* Buttons */
         button {
             padding: 10px 20px;
-            background: #ff6b6b;
+            background-color: #007bff;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: background 0.3s;
+            transition: background-color 0.3s;
         }
 
         button:hover {
-            background: #ff4757;
+            background-color: #0056b3;
         }
 
         /* Responsive Design */
